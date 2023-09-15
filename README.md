@@ -38,16 +38,15 @@ Command-line options available for :
 
 # Knowledge Areas Needed for Project
 
- Markup : ```
-          * Basic Programming Concepts
-          * Java Programming Language
-          * Object Orientated Programming Concepts
-          * Objects Serialization & Deserialization
-          * JavaMail API
-          * Activation Jar file
-          * General Constraints
-          * The sender email-id and password is required. The mail will be sent to particular server
-          ```
+          - Basic Programming Concepts
+          - Java Programming Language
+          - Object Orientated Programming Concepts
+          - Objects Serialization & Deserialization
+          - JavaMail API
+          - Activation Jar file
+          - General Constraints
+          - The sender email-id and password is required. The mail will be sent to particular server
+
 
 
 
