@@ -30,11 +30,11 @@ Additional - Sent a birthday wish to saved recipients automatically when the pro
 # Deliverables
 Command-line options available for :
 
- Markup : * Adding a new recipient
-          * Sending an email
-          * Printing out all the names of recipients who have their birthday set to current date
-          * Printing out details (subject and recipient) of all the emails sent on a date specified by user input
-          * Printing out the number of recipient objects in the application
+* Adding a new recipient
+* Sending an email
+* Printing out all the names of recipients who have their birthday set to current date
+* Printing out details (subject and recipient) of all the emails sent on a date specified by user input
+* Printing out the number of recipient objects in the application
 
 # Knowledge Areas Needed for Project
 
