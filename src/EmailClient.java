@@ -3,20 +3,27 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class EmailClient{
+    private static EmailClient instance = null;
     private ArrayList<Wishable> wishableRecipients = new ArrayList<Wishable>();
     private ArrayList<Wishable> newTodayWishableRecipients = new ArrayList<Wishable>();
     private ArrayList<Recipient> allRecipients = new ArrayList<Recipient>();
     private ArrayList<Email> SentEmailList = new ArrayList<Email>();
 
-    public EmailClient(){
+    private EmailClient(){
         this.allRecipients = ContentReader.getRecipientList();
         if(!this.allRecipients.isEmpty()){
             this.SentEmailList = ContentReader.getEmailList();
             this.wishableRecipients = getwishableRecipients();
         }
-
-
     }
+
+    // Applying singleton design pattern such that there can be only one EmailClient Object.
+    public static EmailClient getInstance() {
+        if (instance == null) {
+            instance = new EmailClient();
+        }
+        return instance;
+    } 
     public ArrayList<Wishable> getwishableRecipients(){
         ArrayList<Wishable> wishableRecipientsTemp = new ArrayList<Wishable>();
         if (!this.allRecipients.isEmpty()) {

@@ -9,7 +9,7 @@ public class App {
         System.out.println("Welcome to the command-line based email client.");
         String lastEmailSentDate = ContentReader.readLastEmailSentDateFromFile();
 
-        EmailClient emailClient = new EmailClient();
+        EmailClient emailClient = EmailClient.getInstance();
         Date date = new Date();
         Scanner scanner = new Scanner(System.in);
         boolean runningApp = true; // to check whether email client app running or not.
